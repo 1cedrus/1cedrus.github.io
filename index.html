@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://media.tenor.com/bWUeVRqW9-IAAAAj/fast-cat-cat-excited.gif" type="image/gif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Poppins:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+    <style>
+        *,
+        :root {
+            font-family: 'Honk', system-ui;
+            font-size: 1.5rem;
+        }
+
+        body {
+            background-image: url("https://r4.wallpaperflare.com/wallpaper/487/712/921/pixel-art-sun-building-sunset-wallpaper-1990f86da10abd4bb6b7b87f4021968d.jpg");
+            background-size: cover;
+        }
+
+        .detail {
+            background: rgb(145, 84, 194);
+            background: linear-gradient(90deg, rgba(145, 84, 194, 1) 0%, rgba(255, 68, 0, 1) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex flex-col h-screen">
+        <marquee scrollamount="30" style="font-size: 2rem;">Ngàu bá choáy!!</marquee>
+        <div class="flex justify-center flex-none">
+            <h1 class="text-3xl">Information!</h1>
+        </div>
+        <marquee direction="" class="flex-none" scrollamount="30" style="font-size: 2rem;">Ngàu bá choáy!!</marquee>
+        <main class="flex justify-center py-10 grow">
+            <ul class="detail flex flex-col gap-2 border-4 p-4 h-full">
+                <li>Vu Xuan Tung</li>
+                <li>B21DCCN778</li>
+                <li>D21CQCN10-B</li>
+                <li>
+                    <ul class="flex gap-4 justify-center">
+                        <li>
+                            <a href="#"><img class="size-8"
+                                    src="https://cdn3.iconfinder.com/data/icons/pixel-social-media-2/16/Facebook-512.png"
+                                    alt="Facebook Link"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="size-8"
+                                    src="https://cdn3.iconfinder.com/data/icons/pixel-social-media-2/16/Instagram-512.png"
+                                    alt="Instargram Link"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </main>
+        <marquee class="flex-none h-40" direction="down" behavior="alternate" scrollamount="20">
+            <marquee behavior="alternate">This text will bounce</marquee>
+            <marquee behavior="alternate">This text will bounce</marquee>
+        </marquee>
+    </div>
+</body>
+
+</html>
