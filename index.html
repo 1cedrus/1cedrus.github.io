@@ -4,51 +4,351 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://media.tenor.com/bWUeVRqW9-IAAAAj/fast-cat-cat-excited.gif" type="image/gif">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Poppins:ital,wght@1,100&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="output.css">
-    <title>Document</title>
+    <title>Test</title>
+    <style>
+        form {
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
 
+        main {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+
+        input {
+          display: inline;
+        }
+
+        .correct {
+          background-color: green;
+        }
+
+        .incorrect {
+          background-color: orangered;
+        }
+
+        .testForm {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .ques {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+   
+    </style>
 </head>
 
 <body>
-    <div class="flex flex-col h-screen">
-        <marquee scrollamount="30" style="font-size: 2rem;">Ngàu bá choáy!!</marquee>
-        <div class="flex justify-center flex-none">
-            Information!
-        </div>
-        <marquee direction="" class="flex-none" scrollamount="30" style="font-size: 2rem;">Ngàu bá choáy!!</marquee>
-        <main class="flex justify-center py-10 grow">
-            <ul class="detail flex flex-col gap-2 border-4 p-4 h-full">
-                <li>Vu Xuan Tung</li>
-                <li>B21DCCN778</li>
-                <li>D21CQCN10-B</li>
-                <li>
-                    <ul class="flex gap-4 justify-center">
-                        <li>
-                            <a href="#"><img class="size-8"
-                                    src="https://cdn3.iconfinder.com/data/icons/pixel-social-media-2/16/Facebook-512.png"
-                                    alt="Facebook Link"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img class="size-8"
-                                    src="https://cdn3.iconfinder.com/data/icons/pixel-social-media-2/16/Instagram-512.png"
-                                    alt="Instargram Link"></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <iframe src="https://y8.com/embed/mr_gun_y8" scrolling="no"
-                style="width: 460px; height: 820px; border: 0; margin: 0; padding: 0;"> </iframe>
-        </main>
-        <marquee class="flex-none h-40" direction="down" behavior="alternate" scrollamount="20">
-            <marquee behavior="alternate">This text will bounce</marquee>
-            <marquee behavior="alternate">This text will bounce</marquee>
-        </marquee>
-    </div>
-</body>
 
+</body>
+    <header>
+    </header>
+    <main>
+        <div>
+            <form id="inforForm">
+                <label for="name">Name</label>
+                <input type="text" name="name" >
+                <label for="birthday">Birthday</label>
+                <input type="date" name="birthday" >
+                <label for="card-id">CCCD</label>
+                <input type="text" name="card-id" >
+                <label for="address">Address</label>
+                <input type="text" name="address"   >
+                <input type="submit" style="margin-top: 1rem; align-self: flex-start;">
+            </form>
+        </div>
+        <div>
+          <form id="testForm"></form>
+        </div>
+    </main>
+    <footer></footer>
+    <script id="4-Answer" type="application/json">
+       [
+          {
+            "question": "Which of the following is not a primary color?",
+            "answers": ["Red", "Blue", "Yellow", "Green"],
+            "correct_answer": "Green"
+          },
+          {
+            "question": "Which planet is known as the Red Planet?",
+            "answers": ["Mars", "Venus", "Jupiter", "Saturn"],
+            "correct_answer": "Mars"
+          },
+          {
+            "question": "Who wrote the play 'Romeo and Juliet'?",
+            "answers": ["William Shakespeare", "Jane Austen", "F. Scott Fitzgerald", "Charles Dickens"],
+            "correct_answer": "William Shakespeare"
+          },
+          {
+            "question": "Which of the following is not a programming language?",
+            "answers": ["Python", "Java", "Tableau", "C++"],
+            "correct_answer": "Tableau"
+          },
+          {
+            "question": "What is the capital city of France?",
+            "answers": ["Paris", "London", "Berlin", "Madrid"],
+            "correct_answer": "Paris"
+          },
+          {
+            "question": "Who painted the Mona Lisa?",
+            "answers": ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Claude Monet"],
+            "correct_answer": "Leonardo da Vinci"
+          },
+          {
+            "question": "Which of these animals is not a mammal?",
+            "answers": ["Whale", "Eagle", "Kangaroo", "Dolphin"],
+            "correct_answer": "Eagle"
+          },
+          {
+            "question": "What is the chemical symbol for water?",
+            "answers": ["H2O", "CO2", "NaCl", "O2"],
+            "correct_answer": "H2O"
+          },
+          {
+            "question": "Who was the first person to step on the moon?",
+            "answers": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "John Glenn"],
+            "correct_answer": "Neil Armstrong"
+          },
+          {
+            "question": "What is the tallest mammal in the world?",
+            "answers": ["Giraffe", "Elephant", "Blue Whale", "Gorilla"],
+            "correct_answer": "Giraffe"
+          }
+        ]
+    </script>
+    <script id="trueFalse" type="application/json">
+        [["The National Weather Service will pay $30 for the rights to any original photograph of lightning. ", false], ["Liberace was a notorious womanizer. ", false], ["Due to a calendar mix-up, there were two years in a row identified as 1973. ", false], ["Contrary to popular belief, the white is not the healthiest part of an egg. It's actually the shell. ", false], ["Intelligent people have more zinc and copper in their hair.", true], ["The Spanish word esposa means wife. The plural, esposas, means wives, but also handcuffs.", true], ["Every member of the Australian band Men at Work is currently unemployed.", false], ["In England, the Speaker of the House is not allowed to speak.", true], ["About 20% of gift cards never are redeemed at the full value of the card.", true], ["The only electrical equipment the Amish are allowed to use is a Panini press.", false]]
+    </script>
+    <script id="multipleAnswer" type="application/json">
+[
+    {
+      "question": "Which of the following are mammals?",
+      "answers": [
+        {"option": "Dog", "is_correct": true},
+        {"option": "Bird", "is_correct": false},
+        {"option": "Cat", "is_correct": true},
+        {"option": "Snake", "is_correct": false}
+      ]
+    },
+    {
+      "question": "Name the planets in our solar system.",
+      "answers": [
+        {"option": "Mercury", "is_correct": true},
+        {"option": "Pluto", "is_correct": true},
+        {"option": "Venus", "is_correct": true},
+        {"option": "Moon", "is_correct": false}
+      ]
+    },
+    {
+      "question": "Select the primary colors.",
+      "answers": [
+        {"option": "Red", "is_correct": true},
+        {"option": "Black", "is_correct": false},
+        {"option": "Yellow", "is_correct": true},
+        {"option": "Pink", "is_correct": false}
+      ]
+    },
+    {
+      "question": "Name the oceans of the world.",
+      "answers": [
+        {"option": "Atlantic", "is_correct": true},
+        {"option": "Mediterranean", "is_correct": false},
+        {"option": "Pacific", "is_correct": true},
+        {"option": "Arctic", "is_correct": true}
+      ]
+    },
+    {
+      "question": "Which of these are fruits?",
+      "answers": [
+        {"option": "Apple", "is_correct": true},
+        {"option": "Potato", "is_correct": false},
+        {"option": "Banana", "is_correct": true},
+        {"option": "Carrot", "is_correct": false}
+      ]
+    },
+    {
+      "question": "Select the continents.",
+      "answers": [
+        {"option": "Asia", "is_correct": true},
+        {"option": "Antarctica", "is_correct": true},
+        {"option": "Mars", "is_correct": false},
+        {"option": "Australia", "is_correct": true}
+      ]
+    },
+    {
+      "question": "Which of these are programming languages?",
+      "answers": [
+        {"option": "Python", "is_correct": true},
+        {"option": "Tableau", "is_correct": false},
+        {"option": "Java", "is_correct": true},
+        {"option": "Excel", "is_correct": false}
+      ]
+    },
+    {
+      "question": "Select the colors of the rainbow.",
+      "answers": [
+        {"option": "Red", "is_correct": true},
+        {"option": "White", "is_correct": false},
+        {"option": "Green", "is_correct": true},
+        {"option": "Black", "is_correct": false}
+      ]
+    },
+    {
+      "question": "Which of these are metals?",
+      "answers": [
+        {"option": "Gold", "is_correct": true},
+        {"option": "Plastic", "is_correct": false},
+        {"option": "Silver", "is_correct": true},
+        {"option": "Glass", "is_correct": false}
+      ]
+    },
+    {
+      "question": "Select the programming paradigms.",
+      "answers": [
+        {"option": "Functional", "is_correct": true},
+        {"option": "Emotional", "is_correct": false},
+        {"option": "Object-Oriented", "is_correct": true},
+        {"option": "Structural", "is_correct": true}
+      ]
+    }
+]
+    </script>
+    <script id="textAnswer" type="application/json">
+[
+    {
+      "question": "What is the capital of Italy?",
+      "answer": "Rome"
+    },
+    {
+      "question": "Who is the author of 'To Kill a Mockingbird'?",
+      "answer": "Harper Lee"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "answer": "Au"
+    },
+    {
+      "question": "Name a famous painting by Vincent van Gogh.",
+      "answer": "Starry Night"
+    },
+    {
+      "question": "What is the tallest mountain in the world?",
+      "answer": "Mount Everest"
+    },
+    {
+      "question": "Who was the first woman to win a Nobel Prize?",
+      "answer": "Marie Curie"
+    },
+    {
+      "question": "What is the largest organ in the human body?",
+      "answer": "Skin"
+    },
+    {
+      "question": "Which planet is known as the 'Morning Star'?",
+      "answer": "Venus"
+    },
+    {
+      "question": "Who wrote 'Pride and Prejudice'?",
+      "answer": "Jane Austen"
+    },
+    {
+      "question": "What is the capital city of Australia?",
+      "answer": "Canberra"
+    }
+]
+
+    </script>
+    <script>
+        const fourAnswer = JSON.parse(document.getElementById('4-Answer').textContent);
+        const trueFalse = JSON.parse(document.getElementById('trueFalse').textContent);
+        const multipleAnswer = JSON.parse(document.getElementById('multipleAnswer').textContent);   
+        const textAnswer = JSON.parse(document.getElementById('textAnswer').textContent);
+    
+
+        const testForm =  document.getElementById('testForm')
+        document.getElementById('inforForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const _four = fourAnswer.map(one => `<div class="ques"><div>${one.question}</div>${one.answers.map(answer => `<label for="${answer}">${answer}</label><input type="radio" name="${one.question}" value="${answer}" />`).join("")}</div>`)
+            const _trueFalse = trueFalse.map(one => `<div class="ques"><div>${one[0]}</div><label for="${one[0]}true">True</label><input type=radio name="${one[0]}" value="true" /><label for="${one[0]}false">False</label><input type=radio name="${one[0]}" value="false" /></div>`)
+            const _multipleAnswer = multipleAnswer.map(one => `<div class="ques"><div>${one.question}</div>${one.answers.map(one => `<label for="${one.option}">${one.option}</label><input type="checkbox" name="${one.option}" value="${one.option}" />`).join("")}`)
+            const _textAnswer = textAnswer.map(one => `<div class="ques"><div>${one.question}</div><input type="text" name="${one.question}"/></div>`)
+
+
+            testForm.innerHTML = _four.join("") + _trueFalse.join("") + _multipleAnswer.join("") + _textAnswer.join("") + `<input type="submit" />`;
+        })
+
+        testForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          fourAnswer.map(one => {
+            const tmp = document.querySelector(`input[name="${one.question}"]:checked`);
+            if (!tmp) return;
+
+            const lb = document.querySelector(`label[for="${tmp.value}"]`);
+
+            if (tmp.value === one.correct_answer) {
+              lb.classList.add("correct");
+            } else {
+              lb.classList.add("incorrect");
+            }
+          })
+
+          trueFalse.map(one => {
+            const tmp = document.querySelector(`input[name="${one[0]}"]:checked`);
+            if (!tmp) return;
+
+            const lb = document.querySelector(`label[for="${one[0]}${tmp.value}"]`);
+
+            if (tmp.value === one[1].toString()) {
+              lb.classList.add("correct");
+            } else {
+              lb.classList.add("incorrect");
+            }
+          })
+
+          multipleAnswer.map(one => {
+            one.answers.map(x => {
+              const tmp = document.querySelector(`input[name="${x.option}"]:checked`);
+              if (!tmp) return;
+
+              const lb = document.querySelector(`label[for="${x.option}"]`);
+              
+              if (x.is_correct) {
+              lb.classList.add("correct");
+              } else {
+                lb.classList.add("incorrect");
+              }
+            })
+          })
+
+          textAnswer.map(one => {
+            const tmp = document.querySelector(`input[name="${one.question}"]`);
+            if (!tmp) return;
+
+            if (tmp.value === "") return;
+
+            if (tmp.value === one.answer) {
+              tmp.classList.add("correct");
+            } else {
+              tmp.classList.add("incorrect");
+            }
+            
+          })
+        })
+
+
+
+    </script>
+</body>
 </html>
